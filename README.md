@@ -1,4 +1,4 @@
-## Layouts
-Layouts module for UIMATRIX
+## Navigate
+Navigate module for UIMATRIX
 
  

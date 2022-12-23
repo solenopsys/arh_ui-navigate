@@ -34,6 +34,6 @@ const components = [
 })
 export class UILayoutsModule {
   constructor(private ds: DeclaredService) {
-    ds.addComps("@solenopsys/uimatrix-layouts", components)
+    ds.addComps("@solenopsys/uimatrix-navigate", components)
   }
 }
