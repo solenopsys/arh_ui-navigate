@@ -1,0 +1,29 @@
+<div style="position: relative;">
+
+
+    <div style="display: flex">
+        <img src="/assets/{{logo}}.svg"
+             style="padding-left: 20px;padding-top: 5px;padding-bottom: 5px; width: 110px; ">
+        <!--filter: var(--invertLogo)-->
+
+
+        <ui-tabs style="margin-left: 20px;" [select]="selected" (tabClick)="this.tabClick.emit($event)" [tabs$]="tabs$"></ui-tabs>
+
+    </div>
+
+
+    <div style="position: absolute;right: 10px; top:5px;">
+        <ui-icon-button [icon]="'/assets/icons/01-Interface-Essential/12-Settings/cog.svg'"
+                         [title]="'Settings'" [routerLink]="'/settings'"></ui-icon-button>
+
+        <ui-icon-button (click)="menuClick.emit($event)"
+                         [icon]="'/assets/icons/01-Interface-Essential/03-Menu/navigation-menu-1.svg'"
+                         [title]="'Menu'"></ui-icon-button>
+      <ui-icon-button (click)="menuClick.emit($event)"
+                       [icon]="'/assets/icons/01-Interface-Essential/03-Menu/navigation-menu-1.svg'"
+                       [title]="'login'"  [routerLink]="'/login'"></ui-icon-button>
+
+    </div>
+
+
+</div>

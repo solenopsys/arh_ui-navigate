@@ -1,0 +1,12 @@
+<div style="margin-top: 5px;margin-bottom: 5px;">
+  <img *ngIf="data?.icon" src="{{data.icon | baseDir}}"
+       height="16px"
+       style="padding-right: 10px;
+       filter: var(--invertIcons) ;">
+  <a    [routerLink]="data.link+'/'" [routerLinkActive]="['active_link']" style="text-decoration: none; font-size: 15px;  ">{{data.name}}</a>
+</div>
+
+<div style="padding-left: 20px;  " *ngIf="!collapsed">
+  <ui-smenu-item *ngFor=" let item of data?.items" [data]="item"></ui-smenu-item>
+</div>
+
