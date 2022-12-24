@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {SMenuComponent} from "./smenu/smenu.component";
-import {SMenuItemComponent} from "./smenu-item/smenu-item.component";
+import {MenuComponent} from "./menu/menu.component";
+import {MenuItemComponent} from "./menu-item/menu-item.component";
 import {TopPaneComponent} from "./top-pane/top-pane.component";
 import {TabsComponent} from "./tabs/tabs.component";
 import {RouterModule} from "@angular/router";
@@ -10,8 +10,8 @@ import {UIIconsModule} from "@solenopsys/uimatrix-icons";
 import {DeclaredService, UtilsModule} from "@solenopsys/uimatrix-utils";
 
 const components = [
-  SMenuComponent,
-  SMenuItemComponent,
+  MenuComponent,
+  MenuItemComponent,
   TopPaneComponent,
   TabsComponent,
   SubMenuComponent,
@@ -26,13 +26,13 @@ const components = [
     UIIconsModule,
   ],
   exports: [
-    SMenuComponent,
-    SMenuItemComponent,
+    MenuComponent,
+    MenuItemComponent,
     TopPaneComponent,
     SubMenuComponent
   ]
 })
-export class UILayoutsModule {
+export class UINavigateModule {
   constructor(private ds: DeclaredService) {
     ds.addComps("@solenopsys/uimatrix-navigate", components)
   }

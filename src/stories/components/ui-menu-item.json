@@ -1,0 +1,9 @@
+{
+  "name": "Menu Item",
+  "description": "Menu Item component",
+  "package": "@solenopsys/uimatrix-navigate",
+  "component": "MenuItemComponent",
+  "io": {
+
+  }
+}

@@ -3,11 +3,11 @@ import {NavigationEnd, Router} from "@angular/router";
 import {MenuItemData} from "../model";
 
 @Component({
-  selector: "ui-smenu",
-  templateUrl: "./smenu.component.html",
-  styleUrls: ["./smenu.component.css"]
+  selector: "ui-menu",
+  templateUrl: "./menu.component.html",
+  styleUrls: ["./menu.component.css"]
 })
-export class SMenuComponent implements OnInit {
+export class MenuComponent implements OnInit {
 
   @Input()
   data!: MenuItemData[];

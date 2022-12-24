@@ -1,3 +1,5 @@
-export * from './lib/fui-layouts.module'
+
 export * from './lib/model'
-export * from './lib/smenu/smenu.component'
+export * from './lib/menu/menu.component'
+export * from './lib/ui-navigate.module'
+

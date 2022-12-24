@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/uimatrix-layouts",
+  "name": "@solenopsys/uimatrix-navigate",
   "version": "0.0.1",
   "scripts": {
     "test": "node index.js",

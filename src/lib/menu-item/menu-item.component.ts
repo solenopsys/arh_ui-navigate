@@ -9,7 +9,7 @@ import {MenuItemData} from "../model";
   templateUrl: './smenu-item.component.html',
   styleUrls: ['./smenu-item.component.css']
 })
-export class SMenuItemComponent implements OnInit {
+export class MenuItemComponent implements OnInit {
   @Input()
   collapsed = false;
 
