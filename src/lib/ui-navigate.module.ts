@@ -5,16 +5,17 @@ import {MenuItemComponent} from "./menu-item/menu-item.component";
 import {TopPaneComponent} from "./top-pane/top-pane.component";
 import {TabsComponent} from "./tabs/tabs.component";
 import {RouterModule} from "@angular/router";
-import {SubMenuComponent} from "./sub-menu/sub-menu.component";
+import {SubMenuComponent} from "../../../icons/src/lib/sub-menu/sub-menu.component";
 import {UIIconsModule} from "@solenopsys/uimatrix-icons";
 import {DeclaredService, UtilsModule} from "@solenopsys/uimatrix-utils";
+import {UIControlsModule} from "@solenopsys/uimatrix-controls";
 
 const components = [
   MenuComponent,
   MenuItemComponent,
   TopPaneComponent,
   TabsComponent,
-  SubMenuComponent,
+
 ];
 
 @NgModule({
@@ -23,13 +24,12 @@ const components = [
     CommonModule,
     RouterModule,
     UtilsModule,
-    UIIconsModule,
+      UIControlsModule,
   ],
   exports: [
     MenuComponent,
     MenuItemComponent,
     TopPaneComponent,
-    SubMenuComponent
   ]
 })
 export class UINavigateModule {

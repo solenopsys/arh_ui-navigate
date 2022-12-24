@@ -5,9 +5,9 @@ import {MenuItemData} from "../model";
 
 
 @Component({
-  selector: 'ui-smenu-item',
-  templateUrl: './smenu-item.component.html',
-  styleUrls: ['./smenu-item.component.css']
+  selector: 'ui-menu-item',
+  templateUrl: './menu-item.component.html',
+  styleUrls: ['./menu-item.component.css']
 })
 export class MenuItemComponent implements OnInit {
   @Input()
