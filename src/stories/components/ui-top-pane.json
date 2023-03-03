@@ -1,7 +1,7 @@
 {
   "name": "TopPane",
   "description": "TopPane component",
-  "package": "@solenopsys/uimatrix-navigate",
+  "package": "@solenopsys/ui-navigate",
   "component": "TopPaneComponent",
   "io": {
 

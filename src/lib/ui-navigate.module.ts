@@ -5,10 +5,8 @@ import {MenuItemComponent} from "./menu-item/menu-item.component";
 import {TopPaneComponent} from "./top-pane/top-pane.component";
 import {TabsComponent} from "./tabs/tabs.component";
 import {RouterModule} from "@angular/router";
-import {SubMenuComponent} from "../../../icons/src/lib/sub-menu/sub-menu.component";
-import {UIIconsModule} from "@solenopsys/uimatrix-icons";
-import {DeclaredService, UtilsModule} from "@solenopsys/uimatrix-utils";
-import {UIControlsModule} from "@solenopsys/uimatrix-controls";
+import {DeclaredService, UtilsModule} from "@solenopsys/ui-utils";
+import {UIControlsModule} from "@solenopsys/ui-controls";
 
 const components = [
   MenuComponent,
@@ -34,6 +32,6 @@ const components = [
 })
 export class UINavigateModule {
   constructor(private ds: DeclaredService) {
-    ds.addComps("@solenopsys/uimatrix-navigate", components)
+    ds.addComps("@solenopsys/ui-navigate", components)
   }
 }

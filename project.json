@@ -1,16 +1,16 @@
 {
   "name": "navigate",
   "projectType": "library",
-  "sourceRoot": "packages/uimatrix/navigate/src",
+  "sourceRoot": "packages/uimatrix/ui-navigate/src",
   "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/packages/uimatrix/navigate"
+        "coverage/packages/uimatrix/ui-navigate"
       ],
       "options": {
-        "jestConfig": "packages/uimatrix/navigate/jest.config.js",
+        "jestConfig": "packages/uimatrix/ui-navigate/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -18,8 +18,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/uimatrix/navigate/src/**/*.ts",
-          "packages/uimatrix/navigate/src/**/*.html"
+          "packages/uimatrix/ui-navigate/src/**/*.ts",
+          "packages/uimatrix/ui-navigate/src/**/*.html"
         ]
       },
       "outputs": [
