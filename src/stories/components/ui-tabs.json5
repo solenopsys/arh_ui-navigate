@@ -1,0 +1,9 @@
+{
+  "name": "Tabs",
+  "description": "Tabs component",
+  "package": "@solenopsys/ui-navigate",
+  "component": "TabsComponent",
+  "io": {
+
+  }
+}
