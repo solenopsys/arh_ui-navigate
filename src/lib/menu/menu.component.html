@@ -1,4 +1,5 @@
 <div style="padding-left: 20px">
-  <ui-menu-item *ngFor=" let item of data" [data]="item" [collapsed]="'/'+module!==item.link && forModule"></ui-menu-item>
+  <ui-menu-item *ngFor=" let item of data" [data]="item" [collapsed]="! current.startsWith(item.link)  ">
+  </ui-menu-item>
 </div>
 
