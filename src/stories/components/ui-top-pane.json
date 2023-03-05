@@ -1,9 +1,0 @@
-{
-  "name": "TopPane",
-  "description": "TopPane component",
-  "package": "@solenopsys/ui-navigate",
-  "component": "TopPaneComponent",
-  "io": {
-
-  }
-}

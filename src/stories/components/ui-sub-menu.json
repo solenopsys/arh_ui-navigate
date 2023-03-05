@@ -1,9 +1,0 @@
-{
-  "name": "SubMenu",
-  "description": "SubMenu component",
-  "package": "@solenopsys/ui-navigate",
-  "component": "SubMenuComponent",
-  "io": {
-
-  }
-}
