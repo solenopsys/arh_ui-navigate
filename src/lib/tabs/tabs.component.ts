@@ -1,26 +1,22 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Observable} from 'rxjs';
 
+type Tab = { id: string, title: string };
+
 @Component({
     selector: 'ui-tabs',
     templateUrl: './tabs.component.html',
     styleUrls: ['./tabs.component.css']
 })
-export class TabsComponent implements OnInit {
+export class TabsComponent {
 
     @Input()
-    select!: string|undefined;
+    select!: string | undefined;
 
     @Input()
-    tabs$!: Observable<{ id:string, title:string }[]>;
+    tabs$!: Observable<Tab[]>;
 
     @Output()
     tabClick = new EventEmitter<string>();
-
-    constructor() {
-    }
-
-    ngOnInit(): void {
-    }
 
 }
