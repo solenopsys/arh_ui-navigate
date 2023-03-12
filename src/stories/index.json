@@ -1,5 +1,9 @@
 [
   {
+    "title": "Logo",
+    "name": "ui-logo"
+  },
+  {
     "title": "Menu",
     "name": "ui-menu"
   },

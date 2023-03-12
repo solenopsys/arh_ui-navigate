@@ -1,11 +1,9 @@
-<div style="margin-top: 5px;margin-bottom: 5px;">
-  <img *ngIf="data?.icon" src="{{data.icon | baseDir}}"
-       height="16px"
-       style="padding-right: 10px;
-       filter: var(--invertIcons) ;">
-  <a    [routerLink]="data.link+'/'" [routerLinkActive]="['active_link']" style="text-decoration: none; font-size: 15px;  ">{{data.name}}</a>
+<div class="item">
+    <img *ngIf="data?.icon" class="logo_image" src="{{data.icon | baseDir}}">
+    <a (click)="clickEvent.emit(data.link)" [routerLinkActive]="['active_link']" class="link">{{data.name}}</a>
 </div>
-<div style="padding-left: 20px;  " *ngIf="!collapsed">
-  <ui-menu-item *ngFor=" let item of data?.items" [data]="item"></ui-menu-item>
+<div *ngIf="!collapsed" class="sub_item">
+    <ui-menu-item *ngFor=" let item of data?.items" [data]="item">
+    </ui-menu-item>
 </div>
 

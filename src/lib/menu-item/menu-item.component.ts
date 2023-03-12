@@ -1,29 +1,21 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Store} from "@ngxs/store";
-import {Navigate} from "@ngxs/router-plugin";
-import {MenuItemData} from "../model";
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {MenuItemData} from "../types"
 
 
 @Component({
-  selector: 'ui-menu-item',
-  templateUrl: './menu-item.component.html',
-  styleUrls: ['./menu-item.component.css']
+    selector: 'ui-menu-item',
+    templateUrl: './menu-item.component.html',
+    styleUrls: ['./menu-item.component.scss']
 })
-export class MenuItemComponent implements OnInit {
-  @Input()
-  collapsed = false;
+export class MenuItemComponent {
+    @Input()
+    collapsed = false;
 
-  @Input()
-  data!: MenuItemData;
+    @Input()
+    data!: MenuItemData;
 
-  constructor(private store: Store) {
-  }
 
-  ngOnInit(): void {
-  }
+    @Output()
+    clickEvent = new EventEmitter<string>();
 
-  nav(link: string) {
-    console.log("START NAV", link)
-    this.store.dispatch(new Navigate([link]))
-  }
 }

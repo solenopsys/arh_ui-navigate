@@ -1,22 +1,20 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Observable} from 'rxjs';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Tab} from "../types";
 
-type Tab = { id: string, title: string };
 
 @Component({
     selector: 'ui-tabs',
     templateUrl: './tabs.component.html',
-    styleUrls: ['./tabs.component.css']
+    styleUrls: ['./tabs.component.scss']
 })
 export class TabsComponent {
 
     @Input()
-    select!: string | undefined;
+    selected!: string | undefined;
 
     @Input()
-    tabs$!: Observable<Tab[]>;
+    tabs!: Tab[];
 
     @Output()
     tabClick = new EventEmitter<string>();
-
 }

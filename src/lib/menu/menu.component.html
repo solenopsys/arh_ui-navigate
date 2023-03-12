@@ -1,5 +1,9 @@
-<div style="padding-left: 20px">
-  <ui-menu-item *ngFor=" let item of data" [data]="item" [collapsed]="! current.startsWith(item.link)  ">
-  </ui-menu-item>
+<div class="menu">
+    <ui-menu-item
+            (clickEvent)="clickEvent.emit($event)"
+            *ngFor=" let item of data"
+            [collapsed]="! current.startsWith(item.link)"
+            [data]="item">
+    </ui-menu-item>
 </div>
 

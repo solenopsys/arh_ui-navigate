@@ -7,31 +7,32 @@ import {TabsComponent} from "./tabs/tabs.component";
 import {RouterModule} from "@angular/router";
 import {DeclaredService, UtilsModule} from "@solenopsys/ui-utils";
 import {UIControlsModule} from "@solenopsys/ui-controls";
+import {LogoComponent} from "./logo/logo.component";
 
 const components = [
-  MenuComponent,
-  MenuItemComponent,
-  TopPaneComponent,
-  TabsComponent,
-
-];
-
-@NgModule({
-  declarations: components,
-  imports: [
-    CommonModule,
-    RouterModule,
-    UtilsModule,
-      UIControlsModule,
-  ],
-  exports: [
     MenuComponent,
     MenuItemComponent,
     TopPaneComponent,
-  ]
+    TabsComponent,
+    LogoComponent
+];
+
+@NgModule({
+    declarations: components,
+    imports: [
+        CommonModule,
+        RouterModule,
+        UtilsModule,
+        UIControlsModule,
+    ],
+    exports: [
+        MenuComponent,
+        MenuItemComponent,
+        TopPaneComponent,
+    ]
 })
 export class UINavigateModule {
-  constructor(private ds: DeclaredService) {
-    ds.addComps("@solenopsys/ui-navigate", components)
-  }
+    constructor(private ds: DeclaredService) {
+        ds.addComps("@solenopsys/ui-navigate", components)
+    }
 }

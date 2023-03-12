@@ -1,23 +1,15 @@
 <div style="position: relative;">
     <div style="display: flex">
-        <img src="/assets/{{logo}}.svg"
-             style="padding-left: 20px;padding-top: 5px;padding-bottom: 5px; width: 110px; ">
-        <ui-tabs style="margin-left: 20px;" [select]="selected" (tabClick)="this.tabClick.emit($event)" [tabs$]="tabs$"></ui-tabs>
+        <ui-logo [logo]="logo"></ui-logo>
+        <div style="margin-left: 20px;">
+            <ui-tabs
+                    (tabClick)="this.events.emit($event)"
+                    [selected]="this.config.tabsState.current"
+                    [tabs]="this.config.tabsState.tabs">
+            </ui-tabs>
+        </div>
     </div>
-
-
     <div style="position: absolute;right: 10px; top:5px;">
-        <ui-icon-button [icon]="'/assets/icons/01-Interface-Essential/12-Settings/cog.svg'"
-                         [title]="'Settings'" [routerLink]="'/settings'"></ui-icon-button>
-
-        <ui-icon-button (click)="menuClick.emit($event)"
-                         [icon]="'/assets/icons/01-Interface-Essential/03-Menu/navigation-menu-1.svg'"
-                         [title]="'Menu'"></ui-icon-button>
-      <ui-icon-button (click)="menuClick.emit($event)"
-                       [icon]="'/assets/icons/01-Interface-Essential/03-Menu/navigation-menu-1.svg'"
-                       [title]="'login'"  [routerLink]="'/login'"></ui-icon-button>
-
+        <ui-button-group [actions]="this.config.actions"></ui-button-group>
     </div>
-
-
 </div>

@@ -1,0 +1,24 @@
+.active_link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sub_item {
+  padding-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.logo_image {
+  height: 16px;
+  padding-right: 10px;
+  filter: var(--invertIcons);
+}
