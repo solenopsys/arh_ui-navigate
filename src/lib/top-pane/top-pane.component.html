@@ -3,13 +3,13 @@
         <ui-logo [logo]="logo"></ui-logo>
         <div style="margin-left: 20px;">
             <ui-tabs
-                    (tabClick)="this.events.emit($event)"
-                    [selected]="this.config.tabsState.current"
-                    [tabs]="this.config.tabsState.tabs">
+                    (tabClick)="this.tabSelect.emit($event)"
+                    [selected]="this.config?.tabsState.current"
+                    [tabs]="this.config?.tabsState.tabs">
             </ui-tabs>
         </div>
     </div>
     <div style="position: absolute;right: 10px; top:5px;">
-        <ui-button-group [actions]="this.config.actions"></ui-button-group>
+        <ui-button-group [actions]="this.config?.actions" (emmitAction)="actionSelect.emit($event)" ></ui-button-group>
     </div>
 </div>

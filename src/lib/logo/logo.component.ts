@@ -8,8 +8,10 @@ import {Component, Input} from '@angular/core';
 export class LogoComponent {
 
     @Input()
-    logo!: string
+    logo!:string
 
     @Input()
     alt!: string
+
+
 }

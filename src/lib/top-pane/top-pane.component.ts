@@ -12,9 +12,12 @@ export class TopPaneComponent {
     @Input()
     config!: TopPaneConfig;
     @Output()
-    events = new EventEmitter<any>();
+    tabSelect = new EventEmitter<string>();
+    @Output()
+    actionSelect = new EventEmitter<string>();
 
     constructor(@Inject('logo') public logo: string) {
+        console.log("LOGO",this.logo)
     }
 
 
