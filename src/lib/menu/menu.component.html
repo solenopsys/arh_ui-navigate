@@ -2,7 +2,7 @@
     <ui-menu-item
             (clickEvent)="clickEvent.emit($event)"
             *ngFor=" let item of data"
-            [collapsed]="! current.startsWith(item.link)"
+            [collapsed]="false"
             [data]="item">
     </ui-menu-item>
 </div>
