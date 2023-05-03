@@ -29,6 +29,7 @@ const components = [
         MenuComponent,
         MenuItemComponent,
         TopPaneComponent,
+        LogoComponent,
     ]
 })
 export class UINavigateModule {
