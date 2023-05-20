@@ -7,6 +7,14 @@ export interface MenuItemData {
     items?: MenuItemData[],
 }
 
+export interface MenuItem {
+    name: string;
+    link: string;
+    icon: string;
+    submenus: string[]
+    items: any[]
+}
+
 export interface Tab {
     id: string,
     title: string
