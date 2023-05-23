@@ -21,16 +21,6 @@ export class TopPaneComponent {
     }
 
 
-// <ui-icon-button [icon]="'/assets/icons/01-Interface-Essential/12-Settings/cog.svg'"
-//         [title]="'Settings'" [routerLink]="'/settings'"></ui-icon-button>
-//
-//     <ui-icon-button (click)="menuClick.emit($event)"
-//         [icon]="'/assets/icons/01-Interface-Essential/03-Menu/navigation-menu-1.svg'"
-//         [title]="'Menu'"></ui-icon-button>
-//     <ui-icon-button (click)="menuClick.emit($event)"
-//         [icon]="'/assets/icons/01-Interface-Essential/03-Menu/navigation-menu-1.svg'"
-//         [title]="'login'"  [routerLink]="'/login'"></ui-icon-button>
-
 
 }
 
