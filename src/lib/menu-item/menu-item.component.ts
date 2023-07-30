@@ -1,6 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {MenuItemData} from "../types"
-
+import {MenuItemData} from "../types";
 
 @Component({
     selector: 'ui-menu-item',

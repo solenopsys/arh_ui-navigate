@@ -8,6 +8,7 @@ import {RouterModule} from "@angular/router";
 import {DeclaredService, UtilsModule} from "@solenopsys/ui-utils";
 import {UIControlsModule} from "@solenopsys/ui-controls";
 import {LogoComponent} from "./logo/logo.component";
+export * from './types';
 
 const components = [
     MenuComponent,
@@ -30,7 +31,7 @@ const components = [
         MenuItemComponent,
         TopPaneComponent,
         LogoComponent,
-    ]
+            ]
 })
 export class UINavigateModule {
     constructor(private ds: DeclaredService) {

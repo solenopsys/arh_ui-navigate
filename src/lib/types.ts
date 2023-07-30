@@ -1,13 +1,13 @@
 import {ActionButton} from "@solenopsys/ui-controls";
 
-export interface MenuItemData {
+export type MenuItemData = {
     name: string,
     link: string,
     icon?: string,
     items?: MenuItemData[],
 }
 
-export interface MenuItem {
+export declare type MenuItem = {
     name: string;
     link: string;
     icon: string;
@@ -15,17 +15,17 @@ export interface MenuItem {
     items: any[]
 }
 
-export interface Tab {
+export declare type Tab ={
     id: string,
     title: string
 }
 
-export interface TabsState {
+export declare type TabsState = {
     current: string,
     tabs: Tab[],
 }
 
-export interface TopPaneConfig  {
+export declare type TopPaneConfig = {
     tabsState: TabsState,
     actions: ActionButton[];
 }
