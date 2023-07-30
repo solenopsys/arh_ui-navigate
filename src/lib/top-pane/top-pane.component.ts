@@ -16,9 +16,11 @@ export class TopPaneComponent {
     @Output()
     actionSelect = new EventEmitter<string>();
 
+    @Input() public logo: string
+
     constructor(
-        @Inject('logo') public logo: string) {
-        console.log("LOGO",this.logo)
+       ) {
+      //  console.log("LOGO",this.logo)
     }
 
 
