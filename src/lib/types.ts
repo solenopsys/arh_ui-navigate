@@ -7,7 +7,7 @@ export type MenuItemData = {
     items?: MenuItemData[],
 }
 
-export declare type MenuItem = {
+export  type MenuItem = {
     name: string;
     link: string;
     icon: string;
@@ -15,17 +15,17 @@ export declare type MenuItem = {
     items: any[]
 }
 
-export declare type Tab ={
+export  type Tab ={
     id: string,
     title: string
 }
 
-export declare type TabsState = {
+export  type TabsState = {
     current: string,
     tabs: Tab[],
 }
 
-export declare type TopPaneConfig = {
+export  type TopPaneConfig = {
     tabsState: TabsState,
     actions: ActionButton[];
 }

@@ -6,6 +6,12 @@
 .item {
   margin-top: 5px;
   margin-bottom: 5px;
+  // max text width 200px and ...
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  width: 200px;
 }
 
 .sub_item {
