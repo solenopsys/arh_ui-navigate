@@ -1,6 +1,6 @@
 {
   "name": "@solenopsys/ui-navigate",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "peerDependencies": {
     "@solenopsys/ui-controls": "0.1.0",
     "@solenopsys/ui-utils": "0.1.0"
